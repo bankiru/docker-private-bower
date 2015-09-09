@@ -1,0 +1,49 @@
+{
+    "port": 5678,
+    "registryFile": "./storage/repository.json",
+    "timeout": 144000,
+    "public": {
+        "disabled": false,
+        "registry": "http://bower.herokuapp.com/packages/",
+        "registryFile": "./storage/repository-public.json",
+        "whitelist": [],
+        "blacklist": []
+    },
+    "authentication": {
+        "enabled": false,
+        "key": "password"
+    },
+    "repositoryCache": {
+        "cachePrivate": false,
+        "git": {
+            "enabled": true,
+            "cacheDirectory": "./storage/git-repo-cache",
+            "host": "0.0.0.0",
+            "port": 6789,
+            "protocol": "git",
+            "publicAccessURL" : "<address>:6789",
+            "refreshTimeout": 10
+        },
+        "svn": {
+            "enabled": true,
+            "cacheDirectory": "./storage/svn-repo-cache",
+            "host": "0.0.0.0",
+            "port": 7891,
+            "protocol": "svn",
+            "publicAccessURL" : "<address>:7891",
+            "refreshTimeout": 10
+        }
+    },
+    "proxySettings" : {
+        "enabled": false,
+        "host": "proxy",
+        "username": "name",
+        "password" : "pass",
+        "port": 8080,
+        "tunnel": false
+    },
+    "log4js" : {
+        "enabled": false,
+        "configPath" : "log4js.conf.json"
+    }
+}

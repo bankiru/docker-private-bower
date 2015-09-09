@@ -1,0 +1,16 @@
+{
+  "replaceConsole": true,
+  "appenders": [
+    {
+      "type": "file",
+      "absolute": true,
+      "layout": {
+        "type": "pattern",
+        "pattern": "[%d] [%h] [%p] [%c] %m"
+      },
+      "filename": "./storage/private-bower.log",
+      "maxLogSize": 20480,
+      "backups": 3
+    }
+  ]
+}
